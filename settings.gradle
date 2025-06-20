@@ -1,0 +1,2 @@
+rootProject.name = 'ussd-balance'
+include ':app'

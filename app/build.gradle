@@ -1,0 +1,32 @@
+plugins {
+  id 'com.android.application'
+}
+
+android {
+  namespace "com.example.ussdbalance"
+  compileSdk 33
+
+  defaultConfig {
+    applicationId "com.example.ussdbalance"
+    minSdk 26
+    targetSdkVersion 33
+    versionCode 1
+    versionName "1.0"
+  }
+
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_17
+    targetCompatibility JavaVersion.VERSION_17
+  }
+  java {
+    toolchain { languageVersion = JavaLanguageVersion.of(17) }
+  }
+}
+
+dependencies {
+  implementation 'androidx.core:core-ktx:1.9.0'
+  implementation 'androidx.appcompat:appcompat:1.6.1'
+  implementation 'com.google.code.gson:gson:2.8.9'
+  implementation 'com.google.firebase:firebase-crashlytics-buildtools:3.0.4'
+}
+
